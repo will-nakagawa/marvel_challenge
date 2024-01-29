@@ -14,7 +14,7 @@ DB_HOST=postgres
 DB_DATABASE=marvel
 DB_USERNAME=postgres
 DB_PASSWORD=example
-DB_URL=postgres://postgres:example@127.0.0.1:5432
+DB_URL=postgres://postgres:example@postgres:5432
 PORT=4000
 ```
 
