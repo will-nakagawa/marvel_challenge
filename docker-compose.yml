@@ -9,14 +9,14 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-  # nodejs_app:
-  #   build:
-  #     dockerfile: Dockerfile
-  #   container_name: node_app
-  #   depends_on:
-  #     - postgres
-  #   ports:
-  #    - "4000:4000"
+  nodejs_app:
+    build:
+      dockerfile: Dockerfile
+    container_name: node_app
+    depends_on:
+      - postgres
+    ports:
+     - "4000:4000"
  
 volumes:
   pgdata:
