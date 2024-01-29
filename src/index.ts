@@ -11,7 +11,7 @@ export let server: Server;
 export const init = async function () {
   server = Hapi.server({
     port: process.env.PORT || 4000,
-    host: "127.0.0.1",
+    host: "0.0.0.0",
    });
 
   // Routes

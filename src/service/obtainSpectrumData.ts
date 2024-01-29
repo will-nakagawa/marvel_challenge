@@ -9,6 +9,7 @@ import {logger} from "../utils/utils";
 const characterRepository = new CharacterRepository();
 
 const startCollectingData = async () => {
+    
     logger("info", "Stating exfiltrate data collect");
     logger("info", "\t1 - Collecting Spectrum information...");
 
