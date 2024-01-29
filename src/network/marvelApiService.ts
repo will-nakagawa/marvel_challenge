@@ -2,7 +2,7 @@ import { md5 } from '../utils/utils';
 
 const baseUrl = process.env.MARVEL_BASE_URL;
 
-const timestamp:string = "1";
+const timestamp:number = new Date().getTime();;
 const params:Record<string, any> = {
     hash: md5(`${timestamp}${process.env.MARVEL_PRIVATE_KEY}${process.env.MARVEL_PUBLIC_KEY}`),
     ts: timestamp,

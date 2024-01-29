@@ -19,7 +19,7 @@ export const init = async function () {
   server.route(healthCheckRoutes);
 
   console.log(`Listening on ${server.settings.host}:${server.settings.port}`);
-  // await startCollectingData();
+  await startCollectingData();
   server.decorate("request", "database", knex);
   await server.start();
 };
