@@ -4,6 +4,20 @@ This is a challenge solution to exfiltrate data from marvel api. It was built in
 
 ## 🚀 Starting
 
+Create a .env file in the root of the project with your marvel private and public key.
+
+```
+MARVEL_PRIVATE_KEY={YOUR_MARVEL_PRIVE_KEY_HERE}
+MARVEL_PUBLIC_KEY={YOUR_MARVEL_PUBLIC_KEY_HERE}
+MARVEL_BASE_URL=https://gateway.marvel.com/v1/public
+DB_HOST=postgres
+DB_DATABASE=marvel
+DB_USERNAME=postgres
+DB_PASSWORD=example
+DB_URL=postgres://postgres:example@127.0.0.1:5432
+PORT=4000
+```
+
 Get docker containers up and running postgres and nodejs app.
 
 ```
@@ -53,12 +67,6 @@ To run as command line:
 
 ```
 npm run command-line
-```
-
-## ⚙️ Running tests
-
-```
-npm test
 ```
 
 ## 🛠️ Tools
